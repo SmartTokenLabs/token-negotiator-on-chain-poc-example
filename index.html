@@ -299,6 +299,7 @@
             { contract: '0x88b48f654c30e99bc2e4a1559b4dcf1ad93fa656', chain: 'rinkeby', ref: "stl rnd zed run", openSeaSlug: 'stl-rnd-zed' },
             { contract: '0x88b48f654c30e99bc2e4a1559b4dcf1ad93fa656', chain: 'rinkeby', ref: "stl rnd bayc derivatives", openSeaSlug: 'stl-rnd-bayc-derivatives' },
             { contract: '0x88b48f654c30e99bc2e4a1559b4dcf1ad93fa656', chain: 'rinkeby', ref: "stl riot racers", openSeaSlug: 'stl-rnd-riot-racers' },
+            { contract: '0x0000853AbE6Fa93f276b62F6984B75Ff2f9dC30E', chain: 'mumbai', ref: "stl test" },
          ],
          options: {
             overlay: {
@@ -406,7 +407,7 @@
             notificationText: "Fashion: Claim a free T-shirt",
             validation: (tokensLength) => {
                if (tokensLength > 0 && !document.getElementById('zed-tshirt-offer')) {
-                  document.getElementById('clothing-offers').innerHTML += `<div id="zed-tshirt-offer" class="card" style="width: 18rem; margin: 20px;"><img src="./images/zed.jpg" class="card-img-top" style="padding: 20px" alt=""><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of thecard's content.</p><a href="#" class="btn btn-primary">Free T-shirt</a></div></div>`;
+                  document.getElementById('clothing-offers').innerHTML += `<div id="zed-tshirt-offer" class="card" style="width: 18rem; margin: 20px;"><img src="./images/zed.jpg" class="card-img-top" style="padding: 20px" alt=""><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of thecard's content.</p><a href="#" class="btn btn-primary" onclick="claimDiscountMockEvt(event)">Free T-shirt</a></div></div>`;
                   showToast(offers.offerG.notificationText);
                }
                if (tokensLength === 0 && document.getElementById('zed-tshirt-offer')) {
