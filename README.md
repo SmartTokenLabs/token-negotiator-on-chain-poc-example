@@ -1,6 +1,9 @@
 # token-negotiator-on-chain-poc-example
 A proof of concept to demonstrate the use of on chain tokens in various scenarios
 
+See:
+https://tokenscript.github.io/token-negotiator-on-chain-poc-example/
+
 ### List of offers:
 
 - Offer A: Tickets to Studio54 offered to BAYC Derivative Holders
